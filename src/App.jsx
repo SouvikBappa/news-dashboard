@@ -169,12 +169,12 @@ export default function App() {
 }}>
 
           <div style={{
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
   gap: '20px',
   padding: '32px',
 }}>
+
 
             {articles.length > 0 ? (
               articles.map((article) => (
