@@ -237,6 +237,6 @@ export default function App() {
       }}>
         Made with ❤️ by Souvik · Kshitij 2025
       </footer>
-    </>
+    </div>
   );
 }
