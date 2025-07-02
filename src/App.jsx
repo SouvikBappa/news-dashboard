@@ -114,7 +114,26 @@ export default function App() {
   }, []);
 
   return (
-    <>
+  <div style={{
+    position: 'relative',
+    minHeight: '100vh',
+    overflowX: 'hidden'
+  }}>
+    {/* Background image */}
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundImage: "url('/bg.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+      zIndex: 0
+    }} />
+     <div style={{ position: 'relative', zIndex: 1 }}>
       <Navbar />
       <SearchBar onSearch={handleSearch} />
 
@@ -229,6 +248,7 @@ export default function App() {
       }}>
         Made with ❤️ by Souvik · Kshitij 2025
       </footer>
+       </div>
     </>
   );
 }
