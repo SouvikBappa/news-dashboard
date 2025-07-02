@@ -52,8 +52,9 @@ const cardStyle = {
     <div
       style={cardStyle}
       onClick={() => onClick(article)}
-      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#f7f7f7')}
-      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#fff')}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.2)')}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)')}
+
     >
       {article.urlToImage && (
         <img
