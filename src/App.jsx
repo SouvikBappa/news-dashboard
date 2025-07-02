@@ -169,11 +169,13 @@ export default function App() {
 }}>
 
           <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-            gap: '20px',
-            padding: '32px',
-          }}>
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+  gap: '20px',
+  padding: '32px',
+}}>
+
             {articles.length > 0 ? (
               articles.map((article) => (
                 <div key={article.url}>
