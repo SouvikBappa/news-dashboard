@@ -159,7 +159,15 @@ export default function App() {
           Loading news...
         </p>
       ) : (
-        <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
+        <div style={{
+  backgroundColor: 'rgba(255, 255, 255, 0.6)',
+  backdropFilter: 'blur(6px)',
+  minHeight: '100vh',
+  borderRadius: '12px',
+  padding: '20px',
+  margin: '20px',
+}}>
+
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
