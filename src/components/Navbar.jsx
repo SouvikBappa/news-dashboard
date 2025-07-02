@@ -20,7 +20,17 @@ export default function Navbar() {
 
   return (
     <nav style={navStyle}>
-      <h2 style={{ margin: 0, fontSize: '24px' }}>📰 News AI</h2>
+      <h2 style={{
+        margin: 0,
+        fontSize: '26px',
+        fontWeight: '800',
+        background: 'linear-gradient(to right, #ff512f, #dd2476)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        letterSpacing: '1px',
+      }}>
+        📰 ByteNews
+      </h2>
       <div>
         <Link to="/" style={linkStyle}>Home</Link>
         <Link to="/summaries" style={linkStyle}>My Summaries</Link>
