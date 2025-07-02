@@ -122,7 +122,6 @@ export default function App() {
     minHeight: '100vh'
   }}>
 
-    }} />
      
       <Navbar />
       <SearchBar onSearch={handleSearch} />
@@ -238,7 +237,6 @@ export default function App() {
       }}>
         Made with ❤️ by Souvik · Kshitij 2025
       </footer>
-       </div>
     </>
   );
 }
