@@ -1,19 +1,22 @@
 import React from 'react';
 
 export default function ArticleCard({ article, onClick }) {
-  const cardStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    border: '1px solid #ddd',
-    borderRadius: '8px',
-    padding: '10px 14px',
-    marginBottom: '12px',
-    boxShadow: '0 1px 4px rgba(0, 0, 0, 0.05)',
-    cursor: 'pointer',
-    transition: 'background 0.2s ease',
-    maxHeight: '100px',
-  };
+const cardStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  backgroundColor: 'rgba(255, 255, 255, 0.1)',  
+  border: '1px solid rgba(255, 255, 255, 0.2)', 
+  borderRadius: '12px',
+  padding: '12px 16px',
+  marginBottom: '16px',
+  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+  cursor: 'pointer',
+  backdropFilter: 'blur(10px)',  
+  WebkitBackdropFilter: 'blur(10px)', 
+  transition: 'background 0.3s ease, transform 0.2s ease',
+  maxHeight: '100px',
+};
+
 
   const thumbnailStyle = {
     width: '90px',
